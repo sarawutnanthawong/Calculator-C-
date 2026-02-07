@@ -4,6 +4,7 @@
 int add(int a, int b);
 int sub(int a, int b);
 int mul(int a, int b);
+float div(int a, int b);
 
 int main()
 {
@@ -39,6 +40,19 @@ int main()
         printf("%d * %d\n", num1, num2);
         printf("result:\n%.0f\n", result);
     }
+     else if (op == '/')
+    {
+        if (num2 == 0)
+        {
+            printf("Error: Cannot divide by zero!\n");
+        }
+        else
+        {
+            result = div(num1, num2);
+            printf("%d / %d\n", num1, num2);
+            printf("result:\n%.2f\n", result);
+        }
+    }
     return 0;
 }
 int add(int a, int b)
@@ -54,4 +68,9 @@ int sub(int a, int b)
 int mul(int a, int b)
 {
     return a * b;
+}
+
+float div(int a, int b)
+{
+    return (float)a / b;
 }
