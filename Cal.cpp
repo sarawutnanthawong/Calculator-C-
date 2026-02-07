@@ -28,6 +28,11 @@ int main() {
         result = add(num1, num2);
         printf("%d + %d\n", num1, num2);
         printf("result:\n%.0f\n", result);
+    } else if (op == '-') {
+        result = sub(num1, num2);
+        printf("%d - %d\n", num1, num2);
+        printf("result:\n%.0f\n", result);
+    
 
     return 0;
 }
@@ -36,5 +41,9 @@ int main() {
 
 int add(int a, int b) {
     return a + b;
+}
+
+int sub(int a, int b) {
+    return a - b;
 }
 
