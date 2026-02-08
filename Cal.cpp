@@ -56,6 +56,11 @@ int main()
     return 0;
 }//end if
 
+int add(int a, int b)
+{
+    return a + b;
+}//edit plus func
+
 int sub(int a, int b)
 {
     return a - b;
