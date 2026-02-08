@@ -64,7 +64,7 @@ int add(int a, int b)
 int sub(int a, int b)
 {
     return a - b;
-}//edit minus func
+}//testconflict
 
 int mul(int a, int b)
 {
